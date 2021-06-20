@@ -1,6 +1,5 @@
 {
   "name": "dashboard",
-  "homepage": "https://Arghadeep-hub.github.io/Dashboard",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,8 +17,6 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "predeploy": "npm run bulid",
-    "deploy": "gh-pages -d bulid",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
