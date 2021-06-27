@@ -4,11 +4,12 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-d
 import Overview from './pages/Overview';
 import { Reports, PieChart, Todos, Progress } from './pages/Reports';
 import Team from './pages/Team';
+import Auth from './auth/Auth'
 
 function App() {
   return (
     <Router>
-      <Sidebar />
+      {/*<Sidebar />*/}
       <Switch>
         <Route path='/overview' exact component={Overview} />
         <Route path='/reports' exact component={Reports} />
@@ -16,6 +17,7 @@ function App() {
         <Route path='/reports/todos' exact component={Todos} />
         <Route path='/reports/progress' exact component={Progress} />
         <Route path='/team' exact component={Team} />
+        <Route path="/auth" exact component={Auth} />
         <Redirect to="/" />
       </Switch>
     </Router>
